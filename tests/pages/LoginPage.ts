@@ -14,7 +14,8 @@ export class LoginPage {
 		this.username = page.getByPlaceholder('Username');
 		this.password = page.getByPlaceholder('Password');
 		this.loginButton = page.getByRole('button', { name: 'Login' });
-		this.error = page.getByTestId('error');
+		// Site uses data-test="error" on the <h3> error element
+		this.error = page.locator('[data-test="error"]');
 	}
 
 	async goto() {

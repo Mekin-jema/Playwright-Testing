@@ -38,7 +38,7 @@ test.describe('Login', () => {
     const login = new LoginPage(page);
     await login.goto();
     await login.login(USERS.locked.username, USERS.locked.password);
-    await expect(login.error).toContainText('locked out');
+    await expect(login.error).toContainText('Sorry, this user has been locked out.');
     await login.expectOnLoginPage();
   });
 });
