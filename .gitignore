@@ -1,0 +1,18 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Node/Editor
+.env
+.env.*
+.DS_Store
+.vscode/
+.idea/
+*.log
+pnpm-debug.log*
+coverage/
